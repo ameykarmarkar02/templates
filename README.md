@@ -1,1 +1,1 @@
-# templates
+# COSC 499 Templates
