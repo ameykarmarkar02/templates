@@ -1,0 +1,196 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[margin=72pt]{geometry}
+
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+
+
+\title{Project Final Report for XXX TEAM NUMBER}
+\author{Team Member: XXX First and Last name SN1234567}
+
+\begin{document}
+\maketitle
+
+\section{Overview}
+
+Provide identification and details on who is on the team and who the
+client is. Does the description include a high-level overview about the
+specific approach taken in this project along with presenting key system
+requirements? What is the UVP that is being offered by the project, who
+are the user groups and what is needed by each user group (just don't
+put in your use case diagram; this should be a summary in high-level
+language of who each user group is and what they are offered by the
+product)? From reading this, the reader should have a solid and complete
+high-level understanding of the product. \textbf{(2-3 pages including
+diagrams)}
+
+\section{System Architecture}
+
+What is the final architecture of the system and what is the tech stack
+that was used (make sure to explain why)? What are the major components
+of the system design and how is it operationalized? You need to describe
+the structure of your project in sufficient detail (i.e. monolithic vs
+micro-services; what is the responsibility of each component)? This
+needs to include a system architecture diagram, a Level 1 DFD along with
+a discussion of tech stack. Be consistent in the use of notation (make
+sure to use proper industry-accepted formats and explain each diagram
+clearly; you will lose marks if it is just a lonely diagram without a
+proper discussion. This section must provide enough detail for a
+technical person to understand how the system was built, what the
+components are, what are the key processes in the system and how data
+flows within the system and is processed. \textbf{(2-3 pages including
+diagrams)}
+
+\section{System Features}
+
+Which features are complete and working? A complete list of features
+needs to be included to describe the system (\textbf{this part (the
+feature list) can be worked on as a team since features may have been
+divided up in a way that only one person worked on each feature in the
+list}). With this, it needs to include an accurate enumeration of the
+features that are working, buggy and what is not working about them.
+This should map to the scope of the project (presented in the overview).
+
+Individually, enumerate each feature included in this project as a set
+of bullet points, including buggy ones which you will indicate and
+explain. Provide 2-3 (brief) sentences to explain each feature so the
+reader is clear on how much work goes into making that feature work.
+\textbf{Page length will depend on how many features were implemented.}
+
+\begin{enumerate}
+    \item Example Feature 1: some explanation about this feature so the reader
+knows the time involved and complexity of getting this to work. Lorem
+ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit,
+vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum
+gravida mauris. Nam arcu libero, nonummy eget, consectetuer id,
+vulputate a, magna.
+\item Example Feature 2: some explanation about this feature so the reader
+knows the time involved and complexity of getting this to work. If this
+feature is yours, add an Asterisk. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac,
+adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu
+libero, nonummy eget, consectetuer id, vulputate a, magna.
+\end{enumerate} 
+
+\section{Features You Individually Completed}
+
+How much of the project did you work on? In your report, you will need
+to individually provide an annotation of the full feature list AND
+clearly indicate which features you have worked on (For example, put an
+asterisk beside the feature you did so you don\textquotesingle t re-type
+all your features again, or put it into a table). \textbf{For each
+feature that you developed, you need to provide enough details for a
+technical person to understand how much work goes into building them and
+how they work (what does it do/how does it work).} The portion of
+features you worked on represents roughly 1/Nth of the work involved in
+the project with respect to both quantity and complexity, where N is the
+number of members in your team (and should be reflected by repo
+activities). \textbf{(Page length will depend on how many features you
+implemented, but likely no more than 5 pages)}
+
+\section{Installation and Setup}
+
+How should someone else install and run your project to test it or to
+continue development with it? Each team member needs to detail (in their
+own words), a clear set of steps to install your project on a local
+machine to get it to run successfully. If there are specific environment
+settings, versions, or IDE requirements we need to know about, state
+those clearly. Note: Do not copy text from the README of your repo
+because if multiple students do that, you will all have identical
+writing, and your reports will be flagged for plagiarism. This section
+should be no more than 1 page.
+
+\section{Lesson's Learned and Project Reflections}
+
+Individually, students will critically evaluate their project
+experience, focusing on the development process, challenges encountered,
+and personal and team growth. Individuals will reflect on how well the
+project objectives and deliverables were met, analyze major challenges
+and solutions, and identify key lessons learned. You will need to
+reflect on:
+
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\item
+  Development Process (considering an analysis of the development
+  process, including planning, implementation, and iteration; reflects
+  on team dynamics, workflow, and the use of tools and methodologies).
+\item
+  Challenges and Solutions (reflecting on how well the project
+  deliverables met the initial requirements and expectations; discuss
+  any deviations and their reasons)
+\item
+  Personal and Team Growth (\textbf{reflect} on personal and team
+  growth, including skills developed, knowledge gained, and how
+  experiences will influence future projects)
+\item
+  Lessons Learned (clearly articulate key lessons that \textbf{YOU}
+  learned from the project; reflect on how these lessons will impact
+  future work and personal development.
+\end{enumerate}
+
+With this reflection:
+
+\begin{itemize}
+\item
+  \textbf{Be Honest and Reflective:} This exercise is for your personal
+  and professional growth. Honest reflections will help you learn from
+  your experiences.
+\item
+  \textbf{Provide Specific Examples:} Use specific examples from your
+  project to illustrate your points. This adds depth and credibility to
+  your reflections.
+\item
+  \textbf{Connect to Future Work:} Think about how what you learned
+  during this project will influence your future projects and
+  professional behavior.
+\item
+  \textbf{Collaborate and Discuss:} Discuss your reflections with your
+  team members. Different perspectives can help you see things you might
+  have missed.
+\end{itemize}
+
+This section should be no more than 1 page.
+
+\end{document}
